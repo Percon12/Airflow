@@ -13,9 +13,9 @@ Este repositório contém a configuração necessária para executar o Apache Ai
 ### 1. Clone este repositório
 
 ```bash
-git clone https://github.com/seu-usuario/airflow-docker-compose.git
+git clone https://github.com/Percon12/Airflow.git
 
-cd airflow-docker-compose
+cd Airflow
 ```
 
 ### 2. Gere uma chave Fernet
