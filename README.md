@@ -23,6 +23,7 @@ cd airflow-docker-compose
 ```python
 python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())"
 ```
+
 Modifique o arquivo Docker-compose.yaml
 
 ```python
@@ -34,13 +35,13 @@ environment:
 
 Execute o comando abaixo para inicializar o banco de dados e criar o usuário admin:
 
-```
+```bash
 docker-compose up airflow-init
 ```
 
 Após a inicialização, inicie todos os serviços do Airflow:
 
-```
+```bash
 docker-compose up -d
 ```
 
@@ -54,10 +55,10 @@ Para criar uma nova DAG, siga os passos abaixo:
 
 Crie um novo arquivo Python no diretório dags. Por exemplo, new_dag.py.
 
-https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html
+Para mais informações, visite: https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html
 
 Depois de criar, reinicie os serviços do Airflow para carregar a nova DAG:
 
-```
+```bash
 docker-compose restart webserver scheduler
 ```
